@@ -1,0 +1,72 @@
+[
+  {
+    "artist_id": "7CajNmpbOovFoOoasH2HaY",
+    "artist_name": "Calvin Harris",
+    "artist_collaborations": {
+      "Ellie Goulding": 6,
+      "Ariana Grande": 1,
+      "Future": 1,
+      "Travis Scott": 1,
+      "21 Savage": 1,
+      "Dua Lipa": 2,
+      "Rihanna": 2
+    }
+  },
+  {
+    "artist_id": "0X2BH1fck6amBIoJhDVmmJ",
+    "artist_name": "Ellie Goulding",
+    "artist_collaborations": {
+      "Calvin Harris": 3
+    }
+  },
+  {
+    "artist_id": "4V8LLVI7PbaPR0K2TGSxFF",
+    "artist_name": "Tyler, The Creator",
+    "artist_collaborations": {
+      "Lil Wayne": 5,
+      "Kanye West": 2,
+      "21 Savage": 1,
+      "GloRilla": 1,
+      "Sexyy Red": 1,
+      "Ty Dolla $ign": 1
+    }
+  },
+  {
+    "artist_id": "2qoQgPAilErOKCwE2Y8wOG",
+    "artist_name": "GloRilla",
+    "artist_collaborations": {
+      "Sexyy Red": 3
+    }
+  },
+  {
+    "artist_id": "3DbwFQlvLxRSi2uX8mf81A",
+    "artist_name": "Sexyy Red",
+    "artist_collaborations": {
+      "GloRilla": 1,
+      "Drake": 1,
+      "ATL Jacob": 1,
+      "Bruno Mars": 2
+    }
+  },
+  {
+    "artist_id": "55Aa2cqylxrFIXC767Z865",
+    "artist_name": "Lil Wayne",
+    "artist_collaborations": {
+      "21 Savage": 3,
+      "Post Malone": 1,
+      "XXXTENTACION": 1,
+      "Travis Scott": 1,
+      "Kendrick Lamar": 2,
+      "Drake": 6,
+      "Bruno Mars": 2,
+      "Future": 9,
+      "Eminem": 2,
+      "Doja Cat": 1
+    }
+  },
+  {
+    "artist_id": "7Ln80lUS6He07XvHI8qqHH",
+    "artist_name": "Arctic Monkeys",
+    "artist_collaborations": {}
+  }
+]

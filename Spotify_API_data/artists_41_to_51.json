@@ -1,0 +1,86 @@
+[
+  {
+    "artist_id": "2fMqTqiTxUDlmcOEPaQSsx",
+    "artist_name": "Amitabh Bhattacharya",
+    "artist_collaborations": {
+      "Pritam": 11,
+      "Arijit Singh": 9
+    }
+  },
+  {
+    "artist_id": "3tPQOjkxO3mrYrrgkTeXgH",
+    "artist_name": "Nikhita Gandhi",
+    "artist_collaborations": {
+      "Pritam": 1,
+      "Arijit Singh": 1,
+      "Amitabh Bhattacharya": 1
+    }
+  },
+  {
+    "artist_id": "1uNFoZAHBGtllmzznpCI3s",
+    "artist_name": "Justin Bieber",
+    "artist_collaborations": {
+      "SZA": 1,
+      "Travis Scott": 2,
+      "Don Toliver": 2,
+      "Future": 2,
+      "benny blanco": 1,
+      "Quavo": 2,
+      "Lil Wayne": 1,
+      "Post Malone": 1
+    }
+  },
+  {
+    "artist_id": "1McMsnEElThX1knmY4oliG",
+    "artist_name": "Olivia Rodrigo",
+    "artist_collaborations": {}
+  },
+  {
+    "artist_id": "1Cs0zKBU1kc0i8ypK3B9ai",
+    "artist_name": "David Guetta",
+    "artist_collaborations": {
+      "Rihanna": 1,
+      "Lil Wayne": 3,
+      "Justin Bieber": 1
+    }
+  },
+  {
+    "artist_id": "5Pwc4xIPtQLFEnJriah9YJ",
+    "artist_name": "OneRepublic",
+    "artist_collaborations": {
+      "Lady Gaga": 8,
+      "David Guetta": 5
+    }
+  },
+  {
+    "artist_id": "6M2wZ9GZgrQXHCFfjv46we",
+    "artist_name": "Dua Lipa",
+    "artist_collaborations": {
+      "Bad Bunny": 1
+    }
+  },
+  {
+    "artist_id": "6XyY86QOPPrYVGvF9ch6wz",
+    "artist_name": "Linkin Park",
+    "artist_collaborations": {}
+  },
+  {
+    "artist_id": "7iK8PXO48WeuP03g8YR51W",
+    "artist_name": "Myke Towers",
+    "artist_collaborations": {
+      "Junior H": 1,
+      "benny blanco": 1
+    }
+  },
+  {
+    "artist_id": "5CiGnKThu5ctn9pBxv7DGa",
+    "artist_name": "benny blanco",
+    "artist_collaborations": {
+      "Justin Bieber": 3,
+      "Eminem": 1,
+      "Calvin Harris": 2,
+      "Ty Dolla $ign": 1,
+      "Myke Towers": 1
+    }
+  }
+]

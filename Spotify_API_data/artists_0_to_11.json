@@ -1,0 +1,157 @@
+[
+  {
+    "artist_id": "06HL4z0CvFAxyc27GXpf02",
+    "artist_name": "Taylor Swift",
+    "artist_collaborations": {
+      "Ed Sheeran": 3,
+      "Future": 2,
+      "Post Malone": 1,
+      "Lana Del Rey": 1
+    }
+  },
+  {
+    "artist_id": "246dkjvS1zLTtiykXe5h60",
+    "artist_name": "Post Malone",
+    "artist_collaborations": {
+      "21 Savage": 2,
+      "Ty Dolla $ign": 2,
+      "Doja Cat": 2,
+      "The Weeknd": 2,
+      "Quavo": 2,
+      "Travis Scott": 2,
+      "Justin Bieber": 1,
+      "Future": 1,
+      "SZA": 1,
+      "Morgan Wallen": 1
+    }
+  },
+  {
+    "artist_id": "1Xyo4u8uXC1ZmMpatF05PJ",
+    "artist_name": "The Weeknd",
+    "artist_collaborations": {
+      "Drake": 3,
+      "Lana Del Rey": 3,
+      "Kendrick Lamar": 1,
+      "Future": 3,
+      "Ariana Grande": 2,
+      "Ty Dolla $ign": 1,
+      "Travis Scott": 1,
+      "Playboi Carti": 1,
+      "Tyler, The Creator": 1,
+      "Lil Wayne": 1,
+      "Ed Sheeran": 1
+    }
+  },
+  {
+    "artist_id": "699OTQXzgjhIYAHMy9RyPD",
+    "artist_name": "Playboi Carti",
+    "artist_collaborations": {
+      "Kanye West": 1,
+      "Future": 25,
+      "Metro Boomin": 17,
+      "The Weeknd": 12,
+      "Travis Scott": 21,
+      "Kendrick Lamar": 3,
+      "Drake": 7,
+      "Beyonc\u00e9": 1,
+      "21 Savage": 2,
+      "Bad Bunny": 1,
+      "SZA": 1,
+      "Quavo": 1,
+      "Ty Dolla $ign": 1,
+      "Lana Del Rey": 1,
+      "Don Toliver": 1
+    }
+  },
+  {
+    "artist_id": "4q3ewBCX7sLwd24euuV69X",
+    "artist_name": "Bad Bunny",
+    "artist_collaborations": {
+      "Feid": 1,
+      "Anuel AA": 1,
+      "Myke Towers": 2,
+      "Drake": 1,
+      "Rauw Alejandro": 2,
+      "Travis Scott": 1,
+      "The Weeknd": 1
+    }
+  },
+  {
+    "artist_id": "2LRoIwlKmHjgvigdNGBHNo",
+    "artist_name": "Feid",
+    "artist_collaborations": {
+      "Rauw Alejandro": 1,
+      "KAROL G": 2,
+      "ATL Jacob": 1
+    }
+  },
+  {
+    "artist_id": "3TVXtAsR1Inumwj472S9r4",
+    "artist_name": "Drake",
+    "artist_collaborations": {
+      "Future": 14,
+      "Rihanna": 2,
+      "Lil Wayne": 10,
+      "The Weeknd": 1,
+      "Kendrick Lamar": 1,
+      "Quavo": 1,
+      "Travis Scott": 4,
+      "Kanye West": 1,
+      "21 Savage": 15,
+      "SZA": 2,
+      "Bad Bunny": 1,
+      "Sexyy Red": 1,
+      "Playboi Carti": 1,
+      "Ty Dolla $ign": 1
+    }
+  },
+  {
+    "artist_id": "6qqNVTkY8uBg9cP3Jd7DAH",
+    "artist_name": "Billie Eilish",
+    "artist_collaborations": {
+      "Justin Bieber": 1
+    }
+  },
+  {
+    "artist_id": "0Y5tJX1MQlPlqiwlOH1tJY",
+    "artist_name": "Travis Scott",
+    "artist_collaborations": {
+      "21 Savage": 3,
+      "Metro Boomin": 1,
+      "Drake": 2,
+      "Playboi Carti": 1,
+      "Beyonc\u00e9": 2,
+      "The Weeknd": 6,
+      "Bad Bunny": 4,
+      "SZA": 1,
+      "Future": 3,
+      "Quavo": 17,
+      "Kanye West": 1,
+      "Justin Bieber": 1,
+      "Don Toliver": 4,
+      "Ty Dolla $ign": 2
+    }
+  },
+  {
+    "artist_id": "12GqGscKJx3aE4t07u7eVZ",
+    "artist_name": "Peso Pluma",
+    "artist_collaborations": {
+      "Junior H": 4,
+      "Neton Vega": 1,
+      "Oscar Maydon": 3,
+      "Natanael Cano": 4,
+      "Gabito Ballesteros": 3,
+      "Quavo": 1,
+      "Myke Towers": 1
+    }
+  },
+  {
+    "artist_id": "6pV5zH2LzjOUHaAvENdMMa",
+    "artist_name": "Neton Vega",
+    "artist_collaborations": {
+      "Peso Pluma": 2,
+      "Oscar Maydon": 2,
+      "Gabito Ballesteros": 2
+    }
+  }
+]

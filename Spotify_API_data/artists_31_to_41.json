@@ -1,0 +1,108 @@
+[
+  {
+    "artist_id": "7tYKF4w9nC0nq9CsPZTHyP",
+    "artist_name": "SZA",
+    "artist_collaborations": {
+      "Kendrick Lamar": 7,
+      "Justin Bieber": 1,
+      "Drake": 1,
+      "Don Toliver": 1,
+      "Doja Cat": 1,
+      "Travis Scott": 2,
+      "Future": 2,
+      "The Weeknd": 1
+    }
+  },
+  {
+    "artist_id": "5pKCCKE2ajJHZ9KAiaK11H",
+    "artist_name": "Rihanna",
+    "artist_collaborations": {
+      "Eminem": 2,
+      "Future": 2,
+      "David Guetta": 1,
+      "Calvin Harris": 1,
+      "Drake": 3,
+      "SZA": 7
+    }
+  },
+  {
+    "artist_id": "40ZNYROS4zLfyyBSs2PGe2",
+    "artist_name": "Zach Bryan",
+    "artist_collaborations": {}
+  },
+  {
+    "artist_id": "1URnnhqYAYcrqrcwql10ft",
+    "artist_name": "21 Savage",
+    "artist_collaborations": {
+      "Metro Boomin": 57,
+      "Doja Cat": 1,
+      "Travis Scott": 8,
+      "Quavo": 1,
+      "Future": 1,
+      "Drake": 14
+    }
+  },
+  {
+    "artist_id": "4gzpq5DPGxSnKTe4SA8HAU",
+    "artist_name": "Coldplay",
+    "artist_collaborations": {
+      "Rihanna": 1
+    }
+  },
+  {
+    "artist_id": "1mcTU81TzQhprhouKaTkpq",
+    "artist_name": "Rauw Alejandro",
+    "artist_collaborations": {
+      "Future": 1,
+      "Ty Dolla $ign": 1,
+      "Feid": 2,
+      "Bad Bunny": 2,
+      "Junior H": 1,
+      "Myke Towers": 2,
+      "Anuel AA": 2
+    }
+  },
+  {
+    "artist_id": "0elWFr7TW8piilVRYJUe4P",
+    "artist_name": "Natanael Cano",
+    "artist_collaborations": {
+      "Gabito Ballesteros": 2,
+      "Neton Vega": 1,
+      "Junior H": 12,
+      "Peso Pluma": 2,
+      "Fuerza Regida": 1,
+      "Oscar Maydon": 3
+    }
+  },
+  {
+    "artist_id": "3l9G1G9MxH6DaRhwLklaf5",
+    "artist_name": "Oscar Maydon",
+    "artist_collaborations": {
+      "Junior H": 2,
+      "Fuerza Regida": 1,
+      "Peso Pluma": 1,
+      "Gabito Ballesteros": 4,
+      "Natanael Cano": 3,
+      "Neton Vega": 1
+    }
+  },
+  {
+    "artist_id": "0ys2OFYzWYB5hRDLCsBqxt",
+    "artist_name": "Fuerza Regida",
+    "artist_collaborations": {
+      "Gabito Ballesteros": 1,
+      "Junior H": 1,
+      "Natanael Cano": 2,
+      "Peso Pluma": 1,
+      "Oscar Maydon": 1
+    }
+  },
+  {
+    "artist_id": "1wRPtKGflJrBx9BmLsSwlU",
+    "artist_name": "Pritam",
+    "artist_collaborations": {
+      "Arijit Singh": 27,
+      "Amitabh Bhattacharya": 12
+    }
+  }
+]

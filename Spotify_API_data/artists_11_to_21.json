@@ -1,0 +1,110 @@
+[
+  {
+    "artist_id": "5K4W6rqBFWDnAN6FQUkS6x",
+    "artist_name": "Kanye West",
+    "artist_collaborations": {
+      "Beyonc\u00e9": 1,
+      "Ty Dolla $ign": 35,
+      "Lil Wayne": 2,
+      "Peso Pluma": 1
+    }
+  },
+  {
+    "artist_id": "7c0XG5cIJTrrAgEC3ULPiq",
+    "artist_name": "Ty Dolla $ign",
+    "artist_collaborations": {
+      "Kanye West": 42,
+      "Quavo": 3,
+      "Kendrick Lamar": 1,
+      "Future": 6,
+      "Post Malone": 1,
+      "Rauw Alejandro": 1,
+      "Travis Scott": 1,
+      "Playboi Carti": 4,
+      "Lil Wayne": 1
+    }
+  },
+  {
+    "artist_id": "66CXWjxzNUsdJxJ2JdwvnR",
+    "artist_name": "Ariana Grande",
+    "artist_collaborations": {
+      "Doja Cat": 2,
+      "The Weeknd": 2,
+      "Ty Dolla $ign": 1,
+      "Lil Wayne": 1,
+      "Future": 1
+    }
+  },
+  {
+    "artist_id": "7jAs1uPnpfNmT6e5qtEPxq",
+    "artist_name": "ATL Jacob",
+    "artist_collaborations": {
+      "Quavo": 1,
+      "Feid": 1
+    }
+  },
+  {
+    "artist_id": "4YRxDV8wJFPHPTeXepOstw",
+    "artist_name": "Arijit Singh",
+    "artist_collaborations": {
+      "Pritam": 59,
+      "Amitabh Bhattacharya": 14,
+      "Nikhita Gandhi": 8
+    }
+  },
+  {
+    "artist_id": "3PpjqSKBer3obW6lDflOBx",
+    "artist_name": "Ram Sampath",
+    "artist_collaborations": {
+      "Arijit Singh": 2,
+      "Prashant Pandey": 3
+    }
+  },
+  {
+    "artist_id": "7vCsTTACb2iT4fvBMnwp5w",
+    "artist_name": "Prashant Pandey",
+    "artist_collaborations": {
+      "Arijit Singh": 6,
+      "Pritam": 3,
+      "Ram Sampath": 8
+    }
+  },
+  {
+    "artist_id": "7dGJo4pcD2V6oG8kP0tJRR",
+    "artist_name": "Eminem",
+    "artist_collaborations": {
+      "Rihanna": 3,
+      "Kendrick Lamar": 1,
+      "Beyonc\u00e9": 2,
+      "Ed Sheeran": 1,
+      "Lil Wayne": 1,
+      "Ty Dolla $ign": 1,
+      "Bruno Mars": 1
+    }
+  },
+  {
+    "artist_id": "2YZyLoL8N0Wb9xBt1NhZWg",
+    "artist_name": "Kendrick Lamar",
+    "artist_collaborations": {
+      "Drake": 1,
+      "Future": 2,
+      "SZA": 3,
+      "Rihanna": 1,
+      "Travis Scott": 1,
+      "The Weeknd": 1
+    }
+  },
+  {
+    "artist_id": "0VRj0yCOv2FXJNP47XQnx5",
+    "artist_name": "Quavo",
+    "artist_collaborations": {
+      "Lana Del Rey": 3,
+      "Future": 2,
+      "21 Savage": 1,
+      "Drake": 1,
+      "Travis Scott": 14,
+      "Peso Pluma": 1,
+      "Ty Dolla $ign": 1
+    }
+  }
+]
