@@ -77,6 +77,7 @@ def main():
     y = 69  # non_inclusive index
     with open("top_artists.json", "w") as file:
         json.dump(top_artists, file, indent=2)
+        
     for artist_id in list(top_artists.keys())[x:y]:
         artist_colab_dict = {}
         artist_colab_dict["artist_id"] = artist_id

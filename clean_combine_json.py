@@ -10,7 +10,7 @@ def process_files(x, y):
             for item in data:
                 if item["artist_name"] == BEYONCE_MISSPELLED:
                     item["artist_name"] = "Beyonce"
-                if item["artist_collaborations"]:  # Remove artists who had no collaborations
+                if item["artist_collaborations"]:  # Remove artists in playlist who had no collaborations
                     for key in item["artist_collaborations"].copy():
                         if key == BEYONCE_MISSPELLED:
                             item["artist_collaborations"]["Beyonce"] = item["artist_collaborations"].get(
