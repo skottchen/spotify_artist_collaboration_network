@@ -47,7 +47,7 @@
     "artist_name": "Playboi Carti",
     "artist_collaborations": {
       "Kanye West": 1,
-      "Future": 25,
+      "Future": 24,
       "Metro Boomin": 17,
       "The Weeknd": 12,
       "Travis Scott": 21,
@@ -56,8 +56,6 @@
       "21 Savage": 2,
       "Bad Bunny": 1,
       "SZA": 1,
-      "Quavo": 1,
-      "Ty Dolla $ign": 1,
       "Lana Del Rey": 1,
       "Don Toliver": 1,
       "Beyonce": 1
@@ -82,7 +80,8 @@
     "artist_collaborations": {
       "Rauw Alejandro": 1,
       "KAROL G": 2,
-      "ATL Jacob": 1
+      "ATL Jacob": 1,
+      "Ty Dolla $ign": 1
     }
   },
   {
@@ -138,7 +137,7 @@
     "artist_collaborations": {
       "Junior H": 4,
       "Neton Vega": 1,
-      "Oscar Maydon": 3,
+      "Oscar Maydon": 2,
       "Natanael Cano": 4,
       "Gabito Ballesteros": 3,
       "Quavo": 1,
@@ -168,11 +167,12 @@
     "artist_id": "7c0XG5cIJTrrAgEC3ULPiq",
     "artist_name": "Ty Dolla $ign",
     "artist_collaborations": {
-      "Kanye West": 42,
+      "Kanye West": 40,
       "Quavo": 3,
       "Kendrick Lamar": 1,
       "Future": 6,
       "Post Malone": 1,
+      "Feid": 1,
       "Rauw Alejandro": 1,
       "Travis Scott": 1,
       "Playboi Carti": 4,
@@ -292,7 +292,7 @@
     "artist_id": "0iEtIxbK0KxaSlF7G42ZOp",
     "artist_name": "Metro Boomin",
     "artist_collaborations": {
-      "21 Savage": 53,
+      "21 Savage": 52,
       "Travis Scott": 15,
       "Quavo": 1,
       "Future": 46,
@@ -364,7 +364,7 @@
       "Fuerza Regida": 1,
       "Myke Towers": 1,
       "Natanael Cano": 15,
-      "Peso Pluma": 2
+      "Peso Pluma": 1
     }
   },
   {
@@ -653,8 +653,8 @@
     "artist_id": "4V8LLVI7PbaPR0K2TGSxFF",
     "artist_name": "Tyler, The Creator",
     "artist_collaborations": {
-      "Lil Wayne": 5,
-      "Kanye West": 2,
+      "Lil Wayne": 4,
+      "Kanye West": 1,
       "21 Savage": 1,
       "GloRilla": 1,
       "Sexyy Red": 1,

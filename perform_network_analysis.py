@@ -7,14 +7,13 @@ import csv
 
 fig = plt.figure()
 
-
 def get_top_artists_with_colabs():
     """
-    returns a list of artist_names in cleaned_artists_data.json
+    returns a list of artist_names in top_artists.json
         - this is all artists who were authors of tracks with collaborations
     """
     top_artists = []
-    with open("Miscellaneous/cleaned_artists_data.json", "r") as file:
+    with open("Spotify_API_data/artists_colab_data.json", "r") as file:
         data = json.load(file)
         for artist_elem in data:
             top_artists.append(artist_elem["artist_name"])
@@ -40,10 +39,10 @@ def generate_random_colors():
 
 def generate_graph():
     """
-    generates a graph and CSV of the data from the Spotify API
+    generates a graph and CSV of the data from the Spotify API data
     """
     G = nx.Graph()
-    with open("Miscellaneous/cleaned_artists_data.json", 'r') as file:
+    with open("Spotify_API_data/artists_colab_data.json", 'r') as file:
         data = json.load(file)
         node_sizes = []
         artist_num_colabs = {}
@@ -75,7 +74,7 @@ def generate_graph():
         # change background color of graph to black
         fig.set_facecolor("#00000F")
 
-        plt.savefig("Outputs/collaboration_graph.png")
+        plt.savefig("Outputs/artists_collaboration_graph.png")
         return G, artist_num_colabs
 
 
@@ -98,8 +97,10 @@ def write_graph_data_to_csv(degree_centrality, artist_num_colabs):
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         for key, value in combined_dict.items():
-            writer.writerow({"Artist": key, "Degree Centrality": value[0], "Number of Collaborations": value[1]})
-        
-network_graph, artist_num_colabs = generate_graph()
-degree_centrality = nx.degree_centrality(network_graph)
-write_graph_data_to_csv(degree_centrality, artist_num_colabs)
+            writer.writerow({"Artist": key, "Degree Centrality": value[0], "Number of Collaborations": value[1]})\
+                
+def perform_network_analysis():        
+    network_graph, artist_num_colabs = generate_graph()
+    degree_centrality = nx.degree_centrality(network_graph)
+    write_graph_data_to_csv(degree_centrality, artist_num_colabs)
+    print("Finished generating graph and CSV. See Outputs folder.")
