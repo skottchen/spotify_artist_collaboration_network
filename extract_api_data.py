@@ -75,7 +75,7 @@ def main():
     # setting x and y prevents getting rate limited by API before all data is collected
     x = 61  # inclusive index 
     y = 69  # non_inclusive index
-    with open("top_artists.json", "w") as file:
+    with open("Miscellaneous/top_artists.json", "w") as file:
         json.dump(top_artists, file, indent=2)
         
     for artist_id in list(top_artists.keys())[x:y]:
