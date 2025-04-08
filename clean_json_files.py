@@ -1,25 +1,22 @@
 import json
 
+
 def clean_json_files():
     collaborations = []
-    BEYONCE_MISSPELLED = "Beyonc\u00e9"
-    with open("./Spotify_API_data/artists_colab_data.json", "r") as file:
+    with open("./Spotify_API_data/raw_artists_colab_data.json", "r") as file:
         data = json.load(file)
         for item in data:
-            if item["artist_name"] == BEYONCE_MISSPELLED:
-                item["artist_name"] = "Beyonce"
+            if item["artist_name"] == "Beyonce":
+
+                # remove first item from Beyonce artist colab dict
+                del item["artist_collaborations"][list(
+                    item["artist_collaborations"].keys())[0]]
 
             # Remove artists in playlist who had no collaborations
             if item["artist_collaborations"]:
-                for key in item["artist_collaborations"].copy():
-                    if key == BEYONCE_MISSPELLED:
-                        item["artist_collaborations"]["Beyonce"] = item["artist_collaborations"].get(
-                            BEYONCE_MISSPELLED)
-                        item["artist_collaborations"].pop(
-                            BEYONCE_MISSPELLED)
                 collaborations.append(item)
 
-    with open("./Spotify_API_data/artists_colab_data.json", "w") as file:
+    with open("./Spotify_API_data/cleaned_artists_colab_data.json", "w") as file:
         json.dump(collaborations, file, indent=2)
-        
-    print("Finished cleaning artists_colab_data.json")
+
+    print("Finished cleaning Spotify API data.")

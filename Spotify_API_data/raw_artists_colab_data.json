@@ -53,12 +53,12 @@
       "Travis Scott": 21,
       "Kendrick Lamar": 3,
       "Drake": 7,
+      "Beyonce": 1,
       "21 Savage": 2,
       "Bad Bunny": 1,
       "SZA": 1,
       "Lana Del Rey": 1,
-      "Don Toliver": 1,
-      "Beyonce": 1
+      "Don Toliver": 1
     }
   },
   {
@@ -119,6 +119,7 @@
       "Metro Boomin": 1,
       "Drake": 2,
       "Playboi Carti": 1,
+      "Beyonce": 2,
       "The Weeknd": 6,
       "Bad Bunny": 4,
       "SZA": 1,
@@ -127,8 +128,7 @@
       "Kanye West": 1,
       "Justin Bieber": 1,
       "Don Toliver": 4,
-      "Ty Dolla $ign": 2,
-      "Beyonce": 2
+      "Ty Dolla $ign": 2
     }
   },
   {
@@ -157,10 +157,10 @@
     "artist_id": "5K4W6rqBFWDnAN6FQUkS6x",
     "artist_name": "Kanye West",
     "artist_collaborations": {
+      "Beyonce": 1,
       "Ty Dolla $ign": 35,
       "Lil Wayne": 2,
-      "Peso Pluma": 1,
-      "Beyonce": 1
+      "Peso Pluma": 1
     }
   },
   {
@@ -230,11 +230,11 @@
     "artist_collaborations": {
       "Rihanna": 3,
       "Kendrick Lamar": 1,
+      "Beyonce": 2,
       "Ed Sheeran": 1,
       "Lil Wayne": 1,
       "Ty Dolla $ign": 1,
-      "Bruno Mars": 1,
-      "Beyonce": 2
+      "Bruno Mars": 1
     }
   },
   {
@@ -334,9 +334,9 @@
     "artist_id": "1HY2Jd0NmPuamShAr6KMms",
     "artist_name": "Lady Gaga",
     "artist_collaborations": {
+      "Beyonce": 1,
       "Bruno Mars": 1,
-      "Ariana Grande": 2,
-      "Beyonce": 1
+      "Ariana Grande": 2
     }
   },
   {
@@ -348,6 +348,11 @@
       "Lady Gaga": 2,
       "Ed Sheeran": 1
     }
+  },
+  {
+    "artist_id": "74KM79TiuVKeVCqs8QtB0B",
+    "artist_name": "Sabrina Carpenter",
+    "artist_collaborations": {}
   },
   {
     "artist_id": "4oUHIQIBe0LHzYfvXNW4QM",
@@ -392,6 +397,11 @@
       "Drake": 3,
       "SZA": 7
     }
+  },
+  {
+    "artist_id": "40ZNYROS4zLfyyBSs2PGe2",
+    "artist_name": "Zach Bryan",
+    "artist_collaborations": {}
   },
   {
     "artist_id": "1URnnhqYAYcrqrcwql10ft",
@@ -500,6 +510,11 @@
     }
   },
   {
+    "artist_id": "1McMsnEElThX1knmY4oliG",
+    "artist_name": "Olivia Rodrigo",
+    "artist_collaborations": {}
+  },
+  {
     "artist_id": "1Cs0zKBU1kc0i8ypK3B9ai",
     "artist_name": "David Guetta",
     "artist_collaborations": {
@@ -524,6 +539,11 @@
     }
   },
   {
+    "artist_id": "6XyY86QOPPrYVGvF9ch6wz",
+    "artist_name": "Linkin Park",
+    "artist_collaborations": {}
+  },
+  {
     "artist_id": "7iK8PXO48WeuP03g8YR51W",
     "artist_name": "Myke Towers",
     "artist_collaborations": {
@@ -543,6 +563,11 @@
     }
   },
   {
+    "artist_id": "53XhwfbYqKCa1cC15pYq2q",
+    "artist_name": "Imagine Dragons",
+    "artist_collaborations": {}
+  },
+  {
     "artist_id": "6eUKZXaKkcviH0Ku9w2n3V",
     "artist_name": "Ed Sheeran",
     "artist_collaborations": {
@@ -557,6 +582,7 @@
     "artist_id": "6vWDO969PvNqNYHIOW5v0m",
     "artist_name": "Beyonce",
     "artist_collaborations": {
+      "Beyonce": 54,
       "Kendrick Lamar": 2,
       "The Weeknd": 1,
       "Kanye West": 3,
@@ -588,11 +614,11 @@
     "artist_id": "77iZVjeYoYSl5P0K9mIiUE",
     "artist_name": "Haze",
     "artist_collaborations": {
-      "Myke Towers": 2,
-      "Feid": 4,
-      "Anuel AA": 3,
+      "Myke Towers": 3,
       "Bad Bunny": 1,
-      "KAROL G": 2
+      "KAROL G": 4,
+      "Anuel AA": 2,
+      "Rauw Alejandro": 1
     }
   },
   {
@@ -605,6 +631,11 @@
       "KAROL G": 1,
       "Fuerza Regida": 1
     }
+  },
+  {
+    "artist_id": "66ihevNkSYNzRAl44dx6jJ",
+    "artist_name": "Carin Leon",
+    "artist_collaborations": {}
   },
   {
     "artist_id": "6Sbl0NT50roqWvy746MfVf",
@@ -693,5 +724,10 @@
       "Eminem": 2,
       "Doja Cat": 1
     }
+  },
+  {
+    "artist_id": "7Ln80lUS6He07XvHI8qqHH",
+    "artist_name": "Arctic Monkeys",
+    "artist_collaborations": {}
   }
 ]

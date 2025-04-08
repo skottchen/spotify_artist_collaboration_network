@@ -1,0 +1,6 @@
+requests
+python-dotenv
+networkx
+matplotlib
+numpy
+randomcolor

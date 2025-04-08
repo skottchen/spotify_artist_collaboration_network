@@ -44,7 +44,8 @@ def get_top_artists(token, playlist_id):
         for artist in item["track"]["artists"]:
             if artist["name"] != "¥$":
                 top_artists[artist["id"]] = artist["name"]
-
+    
+    top_artists["6vWDO969PvNqNYHIOW5v0m"] = "Beyonce"
     return dict(top_artists.items())
 
 
@@ -107,7 +108,7 @@ def clean_album_names(albums):
     return latest
 
 
-def extract_api_data():
+def fetch_api_data():
     token = get_token()
     playlist_id = os.getenv("PLAYLIST_ID")
     top_artists = get_top_artists(token, playlist_id)
@@ -141,9 +142,9 @@ def extract_api_data():
 
         collaboration_data.append(artist_colab_dict)
 
-        with open("./Spotify_API_data/artists_colab_data.json", "w") as f:
+        with open("./Spotify_API_data/raw_artists_colab_data.json", "w") as f:
             json.dump(collaboration_data, f, indent=2)
 
         time.sleep(1)
     
-    print("Finished fetching data from Spotify API")
+    print("Finished fetching raw data from Spotify API")
