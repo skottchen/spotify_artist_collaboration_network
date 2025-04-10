@@ -110,7 +110,7 @@ def main():
     fetch_api_data()
     clean_json_files()
     perform_network_analysis()
-    print("Finish network analysis of top Spotify Artists.")
+    print("Finish network analysis of top Spotify artists.")
     
 if __name__ == "__main__":
     main()

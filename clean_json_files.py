@@ -20,3 +20,4 @@ def clean_json_files():
         json.dump(collaborations, file, indent=2)
 
     print("Finished cleaning Spotify API data.")
+    return collaborations
