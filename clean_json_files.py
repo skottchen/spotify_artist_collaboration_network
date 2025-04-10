@@ -19,5 +19,5 @@ def clean_json_files():
     with open("./Spotify_API_data/cleaned_artists_colab_data.json", "w") as file:
         json.dump(collaborations, file, indent=2)
 
-    print("Finished cleaning Spotify API data.")
+    print("Finished cleaning Spotify API data\n")
     return collaborations

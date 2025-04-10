@@ -147,4 +147,4 @@ def fetch_api_data():
 
         time.sleep(1)
     
-    print("Finished fetching raw data from Spotify API")
+    print("Finished fetching raw data from Spotify API\n")
