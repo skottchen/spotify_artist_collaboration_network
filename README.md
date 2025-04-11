@@ -77,4 +77,5 @@ python project.py
 
 ## 🎥 Video Demo
 For the demo, I will be using Spotify's [Top Artists of 2024 Global](https://open.spotify.com/playlist/37i9dQZF1DX9lzz0FRAxgl) playlist.  
-[![Watch the Demo](https://img.shields.io/badge/Watch%20Video-Demo-red?logo=youtube)](<URL HERE>)
+[![Watch the Demo](https://img.shields.io/badge/Watch%20the%20Demo-red?logo=youtube)](https://www.youtube.com/watch?v=IHHLYT7mpLY)
+
