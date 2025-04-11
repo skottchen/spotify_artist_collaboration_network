@@ -12,7 +12,19 @@ load_dotenv()
 BASE_URL = "https://api.spotify.com/v1"
 session = requests.Session()
 
+
 def spotify_get(url, headers, max_retries=3):
+    """
+    Sends a GET request to the given Spotify API URL with retry handling for rate limits and server errors.
+
+    Args:
+        url (str): The full Spotify API endpoint.
+        headers (dict): Authorization headers containing the access token.
+        max_retries (int): Maximum number of retries for failed requests.
+
+    Returns:
+        dict: Parsed JSON response from the API or an empty dictionary on failure.
+    """
     for _ in range(max_retries):
         response = session.get(url, headers=headers)
 
@@ -20,12 +32,12 @@ def spotify_get(url, headers, max_retries=3):
             retry_after = int(response.headers.get("Retry-After", "10"))
             print(f"Rate limited. Retrying in {retry_after} seconds...")
             time.sleep(retry_after)
-     
+
         elif response.status_code >= 500:
             print(
                 f"Server error {response.status_code}. Retrying in 5 seconds...")
             time.sleep(5)
-          
+
         elif response.ok:
             return response.json()
         else:
@@ -35,6 +47,16 @@ def spotify_get(url, headers, max_retries=3):
 
 
 def get_top_artists(token, playlist_id):
+    """
+    Retrieves the unique artists from a given Spotify playlist.
+
+    Args:
+        token (str): Spotify API access token.
+        playlist_id (str): Spotify playlist ID.
+
+    Returns:
+        dict: Dictionary mapping artist IDs to artist names.
+    """
     top_artists = {}
     url = f"{BASE_URL}/playlists/{playlist_id}?market=US&fields=tracks.items(track(artists(id,name)))"
     headers = get_auth_header(token)
@@ -44,12 +66,23 @@ def get_top_artists(token, playlist_id):
         for artist in item["track"]["artists"]:
             if artist["name"] != "¥$":
                 top_artists[artist["id"]] = artist["name"]
-    
+
     top_artists["6vWDO969PvNqNYHIOW5v0m"] = "Beyonce"
     return dict(top_artists.items())
 
 
 def get_artist_albums(token, artist_id):
+    """
+    Fetches all albums for a given artist and sorts them in descending order
+    by album name and release date.
+
+    Args:
+        token (str): Spotify API access token.
+        artist_id (str): Spotify artist ID.
+
+    Returns:
+        OrderedDict: Albums sorted by (name, release_date), in reverse order.
+    """
     albums = {}
     url = f"{BASE_URL}/artists/{artist_id}/albums?market=US"
     headers = get_auth_header(token)
@@ -62,6 +95,20 @@ def get_artist_albums(token, artist_id):
 
 
 def get_artist_collaborations(token, album_id, album_artist, artist_collaborations, top_artists):
+    """
+    Updates the artist_collaborations dictionary with collaboration counts
+    based on the tracks of a given album.
+
+    Args:
+        token (str): Spotify API access token.
+        album_id (str): Spotify album ID.
+        album_artist (str): Name of the album's main artist.
+        artist_collaborations (dict): Dictionary of current collaboration counts.
+        top_artists (dict): Dictionary of top artist IDs and names.
+
+    Returns:
+        dict: Updated dictionary of collaboration counts.
+    """
     url = f"{BASE_URL}/albums/{album_id}/tracks?market=US"
     headers = get_auth_header(token)
     data = spotify_get(url, headers)
@@ -79,6 +126,16 @@ def get_artist_collaborations(token, album_id, album_artist, artist_collaboratio
 
 
 def clean_album_names(albums):
+    """
+    Cleans album data by keeping only the latest version of each album
+    (based on the base name) to avoid duplicates.
+
+    Args:
+        albums (dict): Dictionary mapping album IDs to tuples of (name, release_date).
+
+    Returns:
+        dict: Dictionary of latest albums with unique base names.
+    """
     latest = {}
     for album_id, (name, date) in albums.items():
         base = name.split(" (")[0]
@@ -109,6 +166,19 @@ def clean_album_names(albums):
 
 
 def fetch_api_data():
+    """
+    Main function that coordinates data extraction from Spotify API:
+    - Retrieves top artists from a playlist.
+    - Saves the top artist data to a JSON file.
+    - Retrieves and cleans each artist’s albums.
+    - Extracts artist collaborations from album tracks.
+    - Saves raw collaboration data to a JSON file.
+
+    Outputs:
+        Writes two JSON files to the 'Spotify_API_data/' directory:
+            - top_artists.json
+            - raw_artists_colab_data.json
+    """
     token = get_token()
     playlist_id = os.getenv("PLAYLIST_ID")
     top_artists = get_top_artists(token, playlist_id)
@@ -146,5 +216,5 @@ def fetch_api_data():
             json.dump(collaboration_data, f, indent=2)
 
         time.sleep(1)
-    
+
     print("Finished fetching raw data from Spotify API\n")

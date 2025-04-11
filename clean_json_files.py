@@ -2,6 +2,18 @@ import json
 
 
 def clean_json_files():
+    """
+    Cleans the raw artist collaboration data retrieved from the Spotify API.
+
+    This function:
+    - Loads data from 'raw_artists_colab_data.json'
+    - Removes the first listed collaboration for Beyoncé (assumed to be incorrect or unwanted)
+    - Excludes any artists that have no recorded collaborations
+    - Saves the cleaned data to 'cleaned_artists_colab_data.json'
+
+    Returns:
+        list: A list of cleaned artist collaboration records.
+    """
     collaborations = []
     with open("./Spotify_API_data/raw_artists_colab_data.json", "r") as file:
         data = json.load(file)

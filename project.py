@@ -11,8 +11,10 @@ fig = plt.figure()
 
 def get_top_artists_with_colabs():
     """
-    returns a list of artist_names in cleaned_artists_colab_data.json
-        - this is all artists who were authors of tracks with collaborations
+    Extracts a list of artist names from the cleaned Spotify collaboration data.
+
+    Returns:
+        list: A list of artist names who have at least one collaboration.
     """
     top_artists = []
     with open("Spotify_API_data/cleaned_artists_colab_data.json", "r") as file:
@@ -24,7 +26,10 @@ def get_top_artists_with_colabs():
 
 def generate_random_colors():
     """
-    returns a color map with 61 random colors - one for each node
+    Generates a list of 61 unique random colors for coloring graph nodes.
+
+    Returns:
+        list: A list of 61 hex color codes.
     """
     color_map = []
     init_color = rc.RandomColor()
@@ -41,7 +46,14 @@ def generate_random_colors():
 
 def generate_graph():
     """
-    generates a graph and CSV of the data from the Spotify API
+    Constructs a NetworkX graph from cleaned Spotify collaboration data,
+    where each node represents an artist and each edge represents a collaboration.
+    Also saves a PNG image of the graph.
+
+    Returns:
+        tuple: A tuple containing:
+            - G (networkx.Graph): The generated graph object.
+            - artist_num_colabs (dict): A dictionary mapping each artist to their total number of collaborations.
     """
     G = nx.Graph()
     with open("Spotify_API_data/cleaned_artists_colab_data.json", 'r') as file:
@@ -82,7 +94,11 @@ def generate_graph():
 
 def write_graph_data_to_csv(degree_centrality, artist_num_colabs):
     """
-    Writes network analysis data/results to a CSV
+    Writes network analysis results, including degree centrality and number of collaborations, to a CSV file.
+
+    Args:
+        degree_centrality (dict): Dictionary of degree centrality values for each artist.
+        artist_num_colabs (dict): Dictionary of the number of collaborations per artist.
     """
     # combine 2 dictionaries
     combined_dict = {}
@@ -101,12 +117,24 @@ def write_graph_data_to_csv(degree_centrality, artist_num_colabs):
         for key, value in combined_dict.items():
             writer.writerow({"Artist": key, "Degree Centrality": value[0], "Number of Collaborations": value[1]})\
                 
-def perform_network_analysis():        
+def perform_network_analysis():  
+    """
+    Executes the network analysis pipeline:
+    - Generates a graph from cleaned data
+    - Computes degree centrality
+    - Writes results to a CSV file
+    """
     network_graph, artist_num_colabs = generate_graph()
     degree_centrality = nx.degree_centrality(network_graph)
     write_graph_data_to_csv(degree_centrality, artist_num_colabs)
 
 def main():
+    """
+    Entry point for the script. Executes the full data pipeline:
+    - Fetches Spotify API data
+    - Cleans the raw data
+    - Performs network analysis and saves outputs
+    """
     fetch_api_data()
     clean_json_files()
     perform_network_analysis()
