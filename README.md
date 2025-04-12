@@ -1,4 +1,4 @@
-# 🎵 Spotify Artists Collaboration Network
+# 🎵 Spotify Artist Collaboration Network
 
 This project visualizes and analyzes musical artist collaborations using data from the Spotify Web API. Given a user-defined playlist, the program extracts the top artists, gathers metadata about their albums and featured tracks, and constructs a network graph where each node represents an artist and each edge represents a collaboration. It outputs a visual graph of the collaboration network and a CSV file displaying each artist’s
 [degree centrality](https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.degree_centrality.html) and total number of collaborations with other artists in the playlist. 
