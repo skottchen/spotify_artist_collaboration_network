@@ -33,7 +33,7 @@ This module processes and filters the raw JSON data for meaningful content:
 - Filters out artists who had no recorded collaborations (to reduce graph clutter).
 - Saves cleaned data to `Spotify_API_data/cleaned_artists_colab_data.json`.
 
-### `perform_network_analysis.py`
+### `project.py`
 
 This is the central analysis and visualization script. It:
 
