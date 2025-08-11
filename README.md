@@ -37,6 +37,7 @@ This module processes and filters the raw JSON data for meaningful content:
 
 This is the central analysis and visualization script. It:
 
+- Calls the other modules.
 - Loads the cleaned collaboration data.
 - Builds a graph using NetworkX, where artists are nodes and collaborations are edges.
 - Assigns a unique color and size to each node based on their collaboration count.
