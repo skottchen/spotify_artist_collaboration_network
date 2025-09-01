@@ -9,6 +9,7 @@ from clean_json_files import clean_json_files
 
 fig = plt.figure()
 
+
 def get_top_artists_with_colabs():
     """
     Extracts a list of artist names from the cleaned Spotify collaboration data.
@@ -21,28 +22,7 @@ def get_top_artists_with_colabs():
         data = json.load(file)
         for artist_elem in data:
             top_artists.append(artist_elem["artist_name"])
-    return top_artists
-
-
-def generate_random_colors():
-    """
-    Generates a list of 61 unique random colors for coloring graph nodes.
-
-    Returns:
-        list: A list of 61 hex color codes.
-    """
-    color_map = []
-    init_color = rc.RandomColor()
-    for _ in range(0, 61):
-        rand_color = init_color.generate(luminosity='dark')[0]
-
-        # ensure each node in the graph has a different color
-        while rand_color in color_map:
-            rand_color = init_color.generate(luminosity='random')[0]
-
-        color_map.append(rand_color)
-    return color_map
-
+    return top_artist
 
 def generate_graph():
     """
@@ -80,7 +60,7 @@ def generate_graph():
             artist_num_colabs[artist_elem["artist_name"]] = artist_node_size
 
         pos = nx.spring_layout(G, k=3/(np.sqrt(len(G.nodes()))), seed=30)
-        color_map = generate_random_colors()
+        color_map = generate_random_colors(len(G.nodes()))
         nx.draw(G, pos, node_size=node_sizes,
                 node_color=color_map, edge_color='red')
         nx.draw_networkx_labels(G, pos, font_size=12,
@@ -91,6 +71,24 @@ def generate_graph():
         plt.savefig("Outputs/artists_collaboration_graph.png")
         return G, artist_num_colabs
 
+def generate_random_colors(n):
+    """
+    Generates a list of unique random hex color codes.
+
+    Args:
+        n (int): The number of unique colors to generate.
+
+    Returns:
+        list: A list of n unique hex color codes as strings.
+    """
+    color_map = []
+    init_color = rc.RandomColor()
+    for _ in range(n):
+        rand_color = init_color.generate(luminosity='dark')[0]
+        while rand_color in color_map:
+            rand_color = init_color.generate(luminosity='random')[0]
+        color_map.append(rand_color)
+    return color_map
 
 def write_graph_data_to_csv(degree_centrality, artist_num_colabs):
     """
@@ -111,13 +109,14 @@ def write_graph_data_to_csv(degree_centrality, artist_num_colabs):
 
     # write combined_dict to CSV file
     with open("Outputs/network_analysis_results.csv", "w", newline='') as file:
-        fieldnames = ["Artist", "Degree Centrality", "Number of Collaborations"]
+        fieldnames = ["Artist", "Degree Centrality",
+                      "Number of Collaborations"]
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         for key, value in combined_dict.items():
-            writer.writerow({"Artist": key, "Degree Centrality": value[0], "Number of Collaborations": value[1]})\
-                
-def perform_network_analysis():  
+            writer.writerow({"Artist": key, "Degree Centrality": value[0], "Number of Collaborations": value[1]})
+
+def perform_network_analysis():
     """
     Executes the network analysis pipeline:
     - Generates a graph from cleaned data
@@ -127,6 +126,7 @@ def perform_network_analysis():
     network_graph, artist_num_colabs = generate_graph()
     degree_centrality = nx.degree_centrality(network_graph)
     write_graph_data_to_csv(degree_centrality, artist_num_colabs)
+
 
 def main():
     """
@@ -138,7 +138,8 @@ def main():
     fetch_api_data()
     clean_json_files()
     perform_network_analysis()
-    print("Finish network analysis of top Spotify artists")
-    
+    print("Finished network analysis of top Spotify artists")
+
+
 if __name__ == "__main__":
     main()

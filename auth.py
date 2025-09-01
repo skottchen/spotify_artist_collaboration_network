@@ -33,7 +33,12 @@ def get_token():
     data = {"grant_type": "client_credentials"}
     result = post(url, headers=headers, data=data)
     json_result = json.loads(result.content)
-    token = json_result["access_token"]
+    try: 
+        token = json_result["access_token"]
+    except Exception:
+        print("Client id:", client_id)
+        print("Client secret, ", client_secret)
+        print("Error from Spotify:", json_result)
     return token
 
 
