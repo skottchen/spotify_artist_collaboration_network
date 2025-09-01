@@ -1,5 +1,5 @@
 *.env
-*__pycache__
+*test_project.py
 *.pytest_cache
 *README.Docker.md
 *compose.yaml
