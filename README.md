@@ -6,7 +6,6 @@
 - [Final Outputs](#final-outputs)
 - [How to Run](#how-to-run)
 - [Running This Program with Docker](#running-this-program-with-docker)
-- [Video Demo](#video-demo)
 
 # Spotify Artist Collaboration Network
 
@@ -117,8 +116,3 @@ docker run `
 ```
 
 This will map the container's `Outputs` and `Spotify_API_data` directories to the corresponding project directories, so all generated files will be available on your local machine after the container finishes running.
-
-## Video Demo
-For the demo, I will be using Spotify's [Top Artists of 2024 Global](https://open.spotify.com/playlist/37i9dQZF1DX9lzz0FRAxgl) playlist.  
-[![Watch the Demo](https://img.shields.io/badge/Watch%20the%20Demo-red?logo=youtube)](https://www.youtube.com/watch?v=IHHLYT7mpLY)
-
